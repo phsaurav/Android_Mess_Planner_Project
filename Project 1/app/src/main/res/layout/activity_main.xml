@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#d4d3d3">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop"
+        android:background="#fa8435"
+        android:title="Sylhet Travel Guide"
+        android:titleTextColor="#e7e7e7"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/shahjalalMajar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Hazrat shahjalal mazar"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/bisnakandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bisnakandi"
+                android:background="@drawable/rounded_button"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/jaflong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jaflong"
+                android:background="@drawable/rounded_button"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/ratargul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ratargul"
+                android:background="@drawable/rounded_button"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/lalakhal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Lalakhal"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".insert">
+
+    <EditText
+        android:id="@+id/initial_insert"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="51dp"
+        android:ems="10"
+        android:hint="@string/initial_ammount_editText"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_insert"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/name_insert"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/enter_name_editText"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/initial_insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_button"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="218dp"
+        android:text="@string/add_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initial_insert" />
+
+    <Button
+        android:id="@+id/back_button"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="218dp"
+        android:text="@string/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initial_insert" />
+</android.support.constraint.ConstraintLayout>
